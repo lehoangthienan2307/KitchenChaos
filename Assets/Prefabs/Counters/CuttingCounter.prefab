@@ -358,7 +358,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterTopPoint: {fileID: 6141029116893272270}
-  cutKitchenObjectSO: {fileID: 11400000, guid: c372681340a30d24aa03d88e1766c9ee, type: 2}
+  cuttingRecipeSOArray:
+  - {fileID: 11400000, guid: 2d658863cf3df48468cf054ed466821a, type: 2}
+  - {fileID: 11400000, guid: 889027f9469d8e4429415b07ab61d779, type: 2}
+  - {fileID: 11400000, guid: 4d3ba94a6ead6674cb8a9de2788b2404, type: 2}
 --- !u!4 &4012381094864821650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5120290904769426515, guid: e912bb6c90d96144aac4b3d1fb1b7f13,
