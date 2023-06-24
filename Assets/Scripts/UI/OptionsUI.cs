@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 using TMPro;
 public class OptionsUI : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class OptionsUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI pauseText;
 
     [SerializeField] private Transform pressToRebindKeyTransform;
+
+    private Action onCloseButtonAction;
     private void Awake()
     {
         Instance = this;
@@ -43,6 +46,7 @@ public class OptionsUI : MonoBehaviour
 
         closeButton.onClick.AddListener(() => {
             Hide();
+            onCloseButtonAction();
         });
 
         moveUpButton.onClick.AddListener(() => {
@@ -94,8 +98,9 @@ public class OptionsUI : MonoBehaviour
         interactAlternateText.text = GameInput.Instance.GetBindingText(GameInput.Binding.InteractAlternate);
         pauseText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Pause);
     }
-    public void Show()
+    public void Show(Action onCloseButton)
     {
+        onCloseButtonAction = onCloseButton;
         gameObject.SetActive(true);
     }
     public void Hide()
