@@ -8,5 +8,5 @@ The more orders you complete before the time runs out, the higher your score wil
 ## Controls
 - **AWSD** - Movement.
 - **E** - Interact with Plate and Ingredients
-- **F** - Interact alternative (Cutting Counter, Stove Counter) 
+- **F** - Interact alternative (Cutting Counter) 
 - **ESC** - Pause/Options.
