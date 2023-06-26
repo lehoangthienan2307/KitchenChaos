@@ -1,5 +1,5 @@
 # KitchenChaos
-An Unity3D game inspired by Overcooked! and learned from the **Code Monkey**'s course.
+An Unity3D game inspired by Overcooked! and learned from the **Code Monkey**'s course.</br>
 ![Game Play Image](/Images/GamePlay.png)
 ## How To Play
 You must prepare, cook and serve up orders before the time runs out.</br></br>
